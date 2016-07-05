@@ -1,0 +1,29 @@
+{
+  "name": "tohttp",
+  "version": "1.0.0",
+  "description": "module is for security requests with https to http",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juliandavidmr/tohttp.git"
+  },
+  "keywords": [
+    "request",
+    "http",
+    "https",
+    "ssl",
+    "json"
+  ],
+  "author": "@anlijudavid",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juliandavidmr/tohttp/issues"
+  },
+  "homepage": "https://github.com/juliandavidmr/tohttp#readme",
+  "dependencies": {
+    "requestify": "^0.1.17"
+  }
+}
