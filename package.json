@@ -1,6 +1,6 @@
 {
   "name": "tohttp",
-  "version": "1.0.0",
+  "version": "1.4.3",
   "description": "module is for security requests with https to http",
   "main": "index.js",
   "scripts": {
@@ -20,7 +20,11 @@
     "post",
     "delete",
     "head",
-    "put"
+    "put",
+    "anonymous",
+    "peticion",
+    "anonimo",
+    "npm"
   ],
   "author": "@anlijudavid",
   "license": "ISC",
