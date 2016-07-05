@@ -15,7 +15,12 @@
     "http",
     "https",
     "ssl",
-    "json"
+    "json",
+    "get",
+    "post",
+    "delete",
+    "head",
+    "put"
   ],
   "author": "@anlijudavid",
   "license": "ISC",
@@ -24,6 +29,7 @@
   },
   "homepage": "https://github.com/juliandavidmr/tohttp#readme",
   "dependencies": {
-    "requestify": "^0.1.17"
+    "requestify": "^0.1.17",
+    "valid-url": "^1.0.9"
   }
 }

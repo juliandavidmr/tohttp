@@ -1,0 +1,34 @@
+{
+  "name": "tohttp",
+  "description": "module is for security requests with https to http",
+  "main": "index.js",
+  "authors": [
+    "@anlijudavid"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "request",
+    "http",
+    "https",
+    "ssl",
+    "json",
+    "get",
+    "post",
+    "delete",
+    "head",
+    "put"
+  ],
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "homepage": "https://github.com/juliandavidmr/tohttp",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
