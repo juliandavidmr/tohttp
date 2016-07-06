@@ -1,6 +1,6 @@
 {
   "name": "tohttp",
-  "version": "1.4.3",
+  "version": "1.4.4",
   "description": "module is for security requests with https to http",
   "main": "index.js",
   "scripts": {

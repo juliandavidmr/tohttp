@@ -22,14 +22,35 @@ Tambien funciona para realizar __peticiones anonimas__, ya que las peticiones so
 ## Quick Example
 
 ### Node
+```js
+import tohttp from 'tohttp'; //ES6
+//Or
+var tohttp = require('tohttp'); //Node normal
+```
 
 ```js
-var tohttp = require('tohttp');
-
-tohttp.get('http//example.com', function (result) {
+//GET
+tohttp.get('http://www.example.com', function (result) { //Dir web, IP ...
   console.log(result);
 });
+
+//POST
+tohttp.post('http://www.example.com', { //Dir web, IP ...
+	email: 'mail@mail.com'
+}, function(result) {
+	console.log(result);
+});
+
+//PUT
+tohttp.put('http://www.example.com', { //Dir web, IP ...
+	email: 'mail@mail.com',
+	pass: 'xxxxxx'
+}, function(result) {
+	console.log(result);
+});
 ```
+
+Also request HEAD and DELETE.
 
 ### Browser
 Use RequireJS o WebPack.
@@ -37,33 +58,33 @@ Use RequireJS o WebPack.
 ### Example
 Code in the server or browser:
 ```js
-tohttp.get('http//example.com', function (result) {
+tohttp.get('http://example.com', function (result) {
   console.log(result);
 });
 ```
 
 Output in format JSON:
-```json
+```js
 {
-  code: 200,
-  headers:
-   { server: 'Cowboy',
-     connection: 'close',
-     'x-powered-by': 'Express',
-     'content-type': 'application/json; charset=utf-8',
-     'content-length': '12185',
-     etag: 'W/"2f99-476I792nSGQcjm7FwiGErg"',
-     date: 'Tue, 05 Jul 2016 23:07:13 GMT',
-     via: '1.1 vegur' },
-  body: '{
-    // Here your code: html, json, text...
+  "code": 200,
+  "headers":
+   {
+     "server": "Cowboy",
+     "connection": "close",
+     "x-powered-by": "Express",
+     "content-type": "application/json; charset=utf-8",
+     "content-length": 12185,
+     "etag": "W/'2f99-476I792nSGQcjm7FwiGErg'",
+     "date": "Tue, 05 Jul 2016 23:07:13 GMT",
+     "via": "1.1 vegur"
+   },
+  "body": {
+     Here your code: html, json, text...
+  }
 ```
 
-## Integration with TypeScript
-
-If you're using TypeScript you maybe want to use the types from [DefinitelyTyped][definitely-typed]
-
 ## Credits
-Full credit to @anlijudavid
+Full credit to ![@anlijudavid]
 
 [logo]: http://www.teenvio.com/es/wp-content/uploads/2012/07/http-https-explorer-8.gif
+[@anlijudavid]: http://www.twitter.com/anlijudavid
