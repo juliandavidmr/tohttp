@@ -8,10 +8,14 @@ __tohttp__ is a module for __HTTP__ requests from __HTTPS__, either from the cli
 
 Also it works for __anonymous requests__ because the requests are made by a remote server with https security.
 
+__Your traffic is safe, nothing is stored on another server__
+
 #### Español
 __toHttp__ es un módulo para realizar peticiones __HTTP__ desde __HTTPS__, ya sea desde el lado del cliente (en el navegador) o del lado del servidor (con nodejs).
 
 Tambien funciona para realizar __peticiones anonimas__, ya que las peticiones son efectuadas por un servidor remoto con seguridad https.
+
+__Tu trafico es seguro, nada es almacenado en otro servidor.__
 
 ## Installation
 
@@ -79,12 +83,12 @@ Output in format JSON:
      "via": "1.1 vegur"
    },
   "body": {
-     Here your code: html, json, text...
+     //Here your code: html, json, text...
   }
 ```
 
 ## Credits
-Full credit to ![@anlijudavid]
+Full credit to ![anlijudavid]
 
 [logo]: http://www.teenvio.com/es/wp-content/uploads/2012/07/http-https-explorer-8.gif
-[@anlijudavid]: http://www.twitter.com/anlijudavid
+[anlijudavid]: http://www.twitter.com/anlijudavid
